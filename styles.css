@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#boxes {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+div {
+    float: left;
+    height: 470px;
+    width: 23%;
+    padding: 0 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#projectcontentid {
+    width: 600px;
+    color: #ffffff;
+    font-family: sans-serif;
+    overflow-y:scroll; 
+    overflow-x:hidden;
+    height: 200px;
+}
+
+#skillcontentid {
+    height: fit-content;
+    width: 150px;
+    color: #ffffff;
+    overflow-y:scroll; 
+    overflow-x:hidden;
+    font-family: sans-serif;
+}
+
+#achievementcontentid {
+    height: fit-content;
+    width: fit-content;
+    color: #ffffff;
+    font-family: sans-serif;
+    overflow-y:scroll; 
+    overflow-x:hidden;
+}
+
+h1 {
+    color: #000000;
+    text-align: center;
+}
+
+body{
+    overflow: hidden;
+}
+.gameContainer{
+    background-image: url(space.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    width: 100%;
+    height: 100vh;
+}
+
+.player{
+    background-image: url(wobg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+}
+
+.obstacle{
+    width: 166px;
+    height: 113px;
+    background-image: url(earth.png);
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    left: 44vw;
+}
+
+.animatePlayer{
+    animation: player 0.6s linear;
+}
+
+.obstacleAni{
+    animation: obstacleAni 5s linear infinite;
+}
+
+.projects{
+    width: 166px;
+    height: 190px;
+    background-image: url(earth.png);
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    left: 20vw;
+}
+
+.skills{
+    width: 166px;
+    height: 190px;
+    background-image: url(redwater.png);
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    left: 50vw;
+}
+.achievements{
+    width: 166px;
+    height: 190px;
+    background-image: url(water.png);
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    left: 80vw;
+}
+
+.skillcontent{
+    visibility: hidden;
+}
+
+.projectcontent{
+    visibility: hidden;
+}
+
+.achievementcontent{
+    visibility: hidden;
+}
+
+@keyframes player{
+    0%{
+        bottom: 0;
+    }
+    50%{
+        bottom: 422px;
+    }
+    100%{
+        bottom: 0; 
+    }
+}
+
+@keyframes obstacleAni{
+    0%{
+        left: 100vw;
+    }
+    100%{
+        left: -10vw;
+    }
+}
